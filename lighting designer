@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Vast+Shadow"/>
+<style>
+body {
+  font-family: courier new;
+  margin: 0 auto;
+  max-width: 900px;
+  background: rgba(30, 70, 70, 1);
+}
+div {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Vast Shadow', normal;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(255, 0200, 0, 1);
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: rgba(255, 200, 150, 1);
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,200,200,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 18px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  border-radius: 0 0 12px 12px;
+  height: 60px;
+  transition: height .7s;
+  -webkit-transition: height .7s;
+  -moz-transition: height .7s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.xx{
+  background-image: url("https://img.mshanken.com/d/cao/bolt/2018-03/habanos-final-2018-2-1600.jpg");
+}
+.xxi{
+  background-image: url("https://halfwheel.com/wp-content/uploads/2019/02/Festival-del-Habano-XXI-Trinidad-Gala-Evening-Ballet-Revolution.jpg");
+}
+.xxii{
+  background-image: url("https://halfwheel.com/wp-content/uploads/2020/03/Festival-Del-Habano-XXII-Final-Gala-Drummers.jpg");
+}
+.edicion {
+  float: right;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 70px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 50px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 30px 16px 0 16px;
+  }
+  p {
+    font-size: 40px;
+    line-height: 34px;
+  }
+  small {
+    font-size: 30px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>CARLOS CARPINTERO</h1>
+<h2>Lighting Designer</h2>
+<div class="xx">
+  <p>Festival del Habano <span class="edicion">XX</span><br />
+  <small>en esta edición la estrella invitada en la noche de gala fue Orishas. Pero si la descripción es muy pequeña el cintillo no cubre. Esto debe tener solución en CSS</small></p>
+</div>
+
+<div class="xxi">
+  <p>Festival del Habano <span class="edicion">XXI</span><br />
+  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+</div>
+  
+<div class="xxii">
+  <p>Festival del Habano <span class="edicion">XXII</span><br />
+  <small>Lollipop tart cotton candy jell y-o carrot cake apple pmnijpiugy ufdt tfyfuyge cupcake. Jelly-o bear claw ice cream candy canes gdi6oyvo7o uihptcy fyfouyfoluyf ugup.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
